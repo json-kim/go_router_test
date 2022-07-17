@@ -16,12 +16,12 @@ class PageHome extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  context.go('/page1');
+                  context.push('/page1');
                 },
                 child: const Text('go to page one')),
             ElevatedButton(
                 onPressed: () {
-                  context.go('/page2');
+                  context.push('/page2');
                 },
                 child: const Text('go to page two')),
           ],
