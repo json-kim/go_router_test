@@ -10,7 +10,7 @@ class PageTwo extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('page two'),
+        title: Text(GoRouter.of(context).location),
       ),
       body: Center(
         child: Column(

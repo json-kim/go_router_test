@@ -9,7 +9,7 @@ class PageHome extends StatelessWidget {
     print('page home build');
     return Scaffold(
       appBar: AppBar(
-        title: const Text('page home'),
+        title: Text(GoRouter.of(context).location),
       ),
       body: Center(
         child: Column(

@@ -9,7 +9,7 @@ class PageOne extends StatelessWidget {
     print('page one build');
     return Scaffold(
       appBar: AppBar(
-        title: const Text('page one'),
+        title: Text(GoRouter.of(context).location),
       ),
       body: Center(
         child: Column(
