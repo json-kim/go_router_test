@@ -17,14 +17,9 @@ class PageTwo extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  context.go('/');
+                  context.pop();
                 },
                 child: const Text('go to page home')),
-            ElevatedButton(
-                onPressed: () {
-                  context.go('/page1');
-                },
-                child: const Text('go to page one')),
           ],
         ),
       ),
